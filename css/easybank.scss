@@ -1,0 +1,195 @@
+
+    $DarkBlue :  hsl(233, 26%, 24%);
+    $LimeGreen: hsl(136, 65%, 51%);
+    $BrightCyan : hsl(192, 70%, 51%);
+    $GrayishBlue: hsl(233, 8%, 62%);
+    $LightGrayishBlue: hsl(220, 16%, 96%);
+    $VeryLightGray: hsl(0, 0%, 98%);
+    $White: hsl(0, 0%, 100%);
+
+body{
+    font-family: 'Public Sans', sans-serif;
+    box-sizing: border-box;
+}
+.btn{
+    background: rgb(33,153,74);
+    background: linear-gradient(90deg, rgba(33,153,74,1) 35%, rgba(1,130,171,1) 100%, rgba(0,212,255,1) 100%, rgba(2,0,36,1) 100%);
+    font-size: 13px;
+    border: none;
+}
+.navbar{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    padding-bottom: 0;
+    height: 64px;
+    background-color: $White;
+    position: relative;
+    .navbar-nav{
+        .nav-link{
+            color: $GrayishBlue;
+        }
+        .nav-link:hover{
+            color: $DarkBlue;
+            border-bottom: 3px solid $LimeGreen;
+        }
+    }
+    .show{
+        background-color: $White;
+        height: 50vh;
+        position: absolute;
+        left: 0;
+        top: 64px;
+        width: 100%;
+        padding: 0 10px;
+        .btn{
+            margin-left: 0 !important;
+            margin-top: 10px;
+        }
+    }
+    
+    .navbar-toggler:focus{
+        box-shadow: none;
+        border-color: rgb(33,153,74);
+}
+}
+.interface{
+    
+    .img_container{
+        background-image: url(../images/bg-intro-desktop.svg);
+        
+    }
+}
+.features{
+    background-color:$LightGrayishBlue;
+    margin-top: -100px; 
+    .heading{
+        width: 50%;
+    }
+        p{
+            color: $GrayishBlue;
+            font-size: 16px
+        }
+}
+
+.articles{
+    background-color: $VeryLightGray;
+    .card:hover{
+        .card-body{
+            h4{
+                color: #0ab745;
+            }
+        }
+    }
+    .card{
+        border: none;
+        cursor: pointer;
+        img{
+            width: 100%;
+            height: 200px;
+        }
+        .card-body{
+            background-color: $White;
+            .by{
+                font-size: 11px;
+                color: $GrayishBlue;
+            }
+            h4{
+                font-size: 20px;
+            }
+            p{
+                color: $GrayishBlue;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+footer{
+    background-color: rgb(97, 82, 190);
+    
+    .container{
+        .logo_footer{
+            width: 40%;
+            cursor: pointer;
+        }
+        .social__links{
+            svg{
+                margin-left: 20px;
+                color: $White;
+                font-size: 18px;
+            }
+            .fa-facebook{
+                margin-left: 0;
+            }
+        }
+        .footer__link{
+            text-decoration: none;
+            color: $White;
+        }
+        .footer__link:hover{
+            color: #b0ffcb;
+        }
+    }
+    .btn{
+        width: 50%;
+    }
+    p{
+        font-size: 12px;
+        color: $White;
+        a{
+            color: #000;
+        }
+        a:hover{
+            color: $White;
+        }
+    }
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color: $LimeGreen;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: #15906D
+}
+
+@media screen and (max-width:767px){
+    .interface{
+        .img_container{
+            img{
+                margin-top: -90px !important;
+            }
+        }
+        .md-text-center{
+            justify-content: center !important;
+            align-items: center !important;
+            padding: 0 35px;
+        }
+    }
+    .features{
+        margin-top: 100px;
+        .heading{
+            text-align: center;
+            padding: 0 5%;
+            width: 100%;
+            h3{
+                font-size: 35px;
+            }
+        }
+        .md-center{
+            align-items: center;
+            padding: 0 5%;
+        }
+    }
+    footer{
+        text-align: center;
+        .md-center{
+            align-items: center !important;
+        }
+        .md-margin-bottom{
+            margin-bottom: 1.5rem !important;
+        }
+    }
+}

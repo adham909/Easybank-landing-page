@@ -1,0 +1,207 @@
+body {
+  font-family: 'Public Sans', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn {
+  background: #21994a;
+  background: -webkit-gradient(linear, left top, right top, color-stop(35%, #21994a), color-stop(100%, #0182ab), color-stop(100%, #00d4ff), to(#020024));
+  background: linear-gradient(90deg, #21994a 35%, #0182ab 100%, #00d4ff 100%, #020024 100%);
+  font-size: 13px;
+  border: none;
+}
+
+.navbar {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  padding-bottom: 0;
+  height: 64px;
+  background-color: white;
+  position: relative;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #9698a6;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #2d314d;
+  border-bottom: 3px solid #31d35c;
+}
+
+.navbar .show {
+  background-color: white;
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  top: 64px;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.navbar .show .btn {
+  margin-left: 0 !important;
+  margin-top: 10px;
+}
+
+.navbar .navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #21994a;
+}
+
+.interface .img_container {
+  background-image: url(../images/bg-intro-desktop.svg);
+}
+
+.features {
+  background-color: #f3f4f6;
+  margin-top: -100px;
+}
+
+.features .heading {
+  width: 50%;
+}
+
+.features p {
+  color: #9698a6;
+  font-size: 16px;
+}
+
+.articles {
+  background-color: #fafafa;
+}
+
+.articles .card:hover .card-body h4 {
+  color: #0ab745;
+}
+
+.articles .card {
+  border: none;
+  cursor: pointer;
+}
+
+.articles .card img {
+  width: 100%;
+  height: 200px;
+}
+
+.articles .card .card-body {
+  background-color: white;
+}
+
+.articles .card .card-body .by {
+  font-size: 11px;
+  color: #9698a6;
+}
+
+.articles .card .card-body h4 {
+  font-size: 20px;
+}
+
+.articles .card .card-body p {
+  color: #9698a6;
+  font-size: 14px;
+}
+
+footer {
+  background-color: #6152be;
+}
+
+footer .container .logo_footer {
+  width: 40%;
+  cursor: pointer;
+}
+
+footer .container .social__links svg {
+  margin-left: 20px;
+  color: white;
+  font-size: 18px;
+}
+
+footer .container .social__links .fa-facebook {
+  margin-left: 0;
+}
+
+footer .container .footer__link {
+  text-decoration: none;
+  color: white;
+}
+
+footer .container .footer__link:hover {
+  color: #b0ffcb;
+}
+
+footer .btn {
+  width: 50%;
+}
+
+footer p {
+  font-size: 12px;
+  color: white;
+}
+
+footer p a {
+  color: #000;
+}
+
+footer p a:hover {
+  color: white;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #31d35c;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #15906D;
+}
+
+@media screen and (max-width: 767px) {
+  .interface .img_container img {
+    margin-top: -90px !important;
+  }
+  .interface .md-text-center {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    padding: 0 35px;
+  }
+  .features {
+    margin-top: 100px;
+  }
+  .features .heading {
+    text-align: center;
+    padding: 0 5%;
+    width: 100%;
+  }
+  .features .heading h3 {
+    font-size: 35px;
+  }
+  .features .md-center {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0 5%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer .md-center {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  footer .md-margin-bottom {
+    margin-bottom: 1.5rem !important;
+  }
+}
+/*# sourceMappingURL=easybank.css.map */
